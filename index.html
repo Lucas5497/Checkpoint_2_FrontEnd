@@ -2,12 +2,89 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Checkpoint_2_FrontEnd/css/style.css">
-    <title>Document</title>
-</head>
-<body>
     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Formulário</title>
+</head>
+<body class="corpo">
+    <form action="registro" method="POST">
+
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+        
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="tel">Tel:</label>
+            <input type="tel" name="tel" id="tel">
+        </div>
+
+        <div>
+            <label for="nascimento">Data de nascimento:</label>
+            <input type="date" name="data" id="data">
+        </div>
+
+        <div>
+
+        <label for="maior ou menor">Você é maior de idade ?</label>
+        <label for="sim">
+            <input type="radio" name="maior ou menor" value="sim">Sim.
+        </label>
+        <label for="nao">
+            <input type="radio" name="maior ou menor" value="nao">Não.
+        </label>
+
+        </div>
+
+       
+       
+       
+       
+       
+       
+        <div>
+            <label for="ponto de interesse">Pontos de interesse na cidade.</label><br>
+
+            <input type="checkbox" id="interesse1" name="interesse1" value="">
+            <label for="interesse1">Fazer compras</label>
+            <input type="checkbox" id="interesse2" name="interesse2" value="">
+            <label for="interesse2">Praticar esportes</label>
+            <input type="checkbox" id="interesse3" name="interesse3" value="">
+            <label for="interesse3">Consulta médica</label>
+            <input type="checkbox" id="interesse4" name="interesse4" value="">
+            <label for="interesse4">Entrevista de emprego</label>
+            <input type="checkbox" id="interesse5" name="interesse5" value="">
+            <label for="interesse5">Fazer compras</label>
+            <input type="checkbox" id="interesse6" name="interesse6" value="">
+            <label for="interesse6">Fazer compras</label>
+        </div><br><br>
+
+        <div>
+            <label for=""></label>
+        </div>
+        
+
+
+        <div>
+            <label for="resumo">Conte um pouco de como foi sua experiência na cidade.</label>
+            <textarea name="resumo" id="resumo" style="width: 26em;" rows="5"></textarea>
+        </div><br>
+
+
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+
+
+    </form>
+
+
+
 </body>
 </html>
